@@ -18,9 +18,8 @@ users = [
 ]
 
 class AllUsers(Resource):
-    def get(self,name=None):
-        if name is None:
-            for user in users:
+    def get(self):
+        for user in users:
                 return users
         return "No users present", 404
 
